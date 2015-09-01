@@ -4,42 +4,26 @@
 
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper'*****, 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple'
+\moderncvstyle{classic}                  % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                     % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple'
 
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 
 \name{Travis Teague} {Byrum}
 \address{8520 Foxbridge Drive}{Matthews, NC 28104} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(704)~930~8478}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{travis.tbyrum@gmail.com}                               % optional, remove / comment the line if not wanted
-\social[github]{travisbyrum}                              % optional, remove / comment the line if not wanted \href{https://github.com/travisbyrum}{github.com/travisbyrum}
+\phone[mobile]{+1~(704)~930~8478}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{travis.tbyrum@gmail.com}                    % optional, remove / comment the line if not wanted
+\social[github]{travisbyrum}                       % optional, remove / comment the line if not wanted \href{https://github.com/travisbyrum}{github.com/travisbyrum}
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
+\makecvtitle\vspace{-3ex}                          % -8ex allows an 11pt font size 
 
 \section{Education} 
-\cventry{2013}{B.S. Statistics}{Duke University}{Durham, NC}{}{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics.\\Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}\\Dean's List Fall 2011, Fall 2012, and Fall 2013}  % arguments 3 to 6 can be left empty
-\cventry{2013}{B.A. Political Science}{Duke University}{Durham, NC}{}{}  % arguments 3 to 6 can be left empty
-
+\cventry{2013}{B.S. Statistics and B.A. Political Science}{Duke University}{Durham, NC}{}{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics.\\Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}\\Dean's List Fall 2011, Fall 2012, and Fall 2013} 
 
 \section{Technical Skills}
 \cvitem{Languages:}{R, Python, SQL, \LaTeX, Microsoft Excel}
@@ -52,8 +36,7 @@
 \item Used the web application framework Shiny in the R programming environment to create a portal for distributing important information to coaches and front office employees
 \item Constructed statistical models for tasks such as forecasting career outcomes for drafted players and predicting the efficiency of lineup combinations
 \item Designed a framework for performance metrics to aid in player evaluation using several statistical methods
-\item Worked directly under the Bucks' Director of Analytics and with front office employees and coaches to assist in
-evaluating the team's on-court performance.
+\item Worked directly under the Bucks' Director of Analytics and with front office employees and coaches to assist in evaluating the team's on-court performance.
 \end{itemize}}
 \cventry{June 2013-April 2014}{North Carolina Common Sense Analyst}{}{Durham, NC}{}{
 \begin{itemize}
@@ -72,7 +55,7 @@ team's coders in creating data visualizations
 \begin{itemize}
 \item Assisted in creation of observational study on economic growth in developing countries
 \item Compiled information on economic growth indicators using statistical software
-\item Handled diagnostics and management of the study’s primary dataset to assess quality and usability
+\item Handled diagnostics and management of the study's primary dataset to assess quality and usability
 \end{itemize}}
 
 %\section{Languages}
@@ -97,20 +80,7 @@ team's coders in creating data visualizations
 
 
 \clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\opening{Dear Sir or Madam,}
-\closing{Best,}
-\makelettertitle
 
-My name is Travis Byrum and I am a graduate from Duke University with a double major in both statistics and political science. As a Data Scientist at BuzzFeed, I can bring a distinct set of skills to the table including programming proficiency as well as a solid background in statistics and machine learning. My work history has demonstrated the ability to use these skills to create solutions and extract knowledge in several different domains. I feel that my experience in quantitative analysis makes me an ideal candidate for this opening.
-
-I am very excited to learn more about this opportunity and share how I will be a great fit for BuzzFeed. You can reach me by phone at (704) 930-8478 or through email at travis.tbyrum@gmail.com. Thank you for your consideration and feel free to contact me within any potential opportunities.
-
-\makeletterclosing
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 
