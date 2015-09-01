@@ -1,0 +1,155 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black 
+    %urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+%\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+%	\LARGE Travis Teague Byrum \\
+%	{\footnotesize Address: 8520 Foxbridge Drive; Matthews NC, 28104} & %\href{mailto:travis.tbyrum@gmail.com}{travis.tbyrum@gmail.com} \\
+%	{\footnotesize Phone Number:  (704) 930-8478} & %\href{https://github.com/travisbyrum}%{github.com/travisbyrum} \\
+%	\end{tabular*}
+
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\Large Travis Teague Byrum}  & (704)-930-8478\\
+	8520 Foxbridge Drive & \href{mailto:travis.tbyrum@gmail.com}{travis.tbyrum@gmail.com} \\
+	Matthews, NC 28104 & \href{https://github.com/travisbyrum}{github.com/travisbyrum}\\
+\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+		\item
+			\ressubheading{Duke University}{Durham, NC}{B.S. Statistics and B.A. Political Science}{Graduated 2013}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics}
+					\resitem{Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}} 
+					\resitem{Dean's List Fall 2011, Fall 2012, and Fall 2013} 
+				\end{itemize}
+				}
+	\end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Technical Skills}
+	\begin{description}
+		\item[Languages:] { \footnotesize R, Python, SQL, \LaTeX, Microsoft Excel
+		}
+		\item[Tools:] { \footnotesize IPython, matplotlib, numpy, scikit-learn, git, Github, BeautifulSoup, PostgreSQL, Sweave, Shiny
+		}
+		\item[Machine Learning and Statistics:] { \footnotesize Classification, Regression, Clustering, Ensembles, Dimensionality Reduction, Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods
+		}
+	\end{description} % End Skills list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+	\begin{itemize}
+		\item 
+			\ressubsubheading{Milwaukee Bucks Analytics Intern}{October 2014 - June 2015}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Used the web application framework Shiny in the R programming environment to create a portal for distributing
+important information to coaches and front office employees}
+					\resitem{Constructed statistical models for tasks such as forecasting career outcomes for drafted players and predicting the
+efficiency of lineup combinations}
+					\resitem{Designed a framework for performance metrics to aid in player evaluation using several statistical methods}
+					\resitem{Worked directly under the Bucks' Director of Analytics and with front office employees and coaches to assist in evaluating
+the team's on-court performance.}
+				\end{itemize}
+				}
+		\item 
+			\ressubsubheading{North Carolina Common Sense Analyst}{June 2013-April 2014}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Synthesized North Carolina government finances for public viewing as part of a Duke student-led public policy initiative}
+					\resitem{Conducted statistical and policy analysis on state budgetary operations}
+					\resitem{Quantified information on state budgetary reports using the R programming environment and assisted the team's
+coders in creating data visualizations}
+				\end{itemize}
+				}
+					\item 
+			\ressubsubheading{Teaching Assistant, Duke Statistics Department}{August-December 2013}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Helped conduct the \textit{Probability/Statistics in Engineering course} at Duke University}
+					\resitem{Instructed one of the course's associated lab sections}
+					\resitem{Assisted students during office hours}
+				\end{itemize}
+				}
+					\item 
+			\ressubsubheading{Duke Political Science Summer Research Assistant}{July-August 2012}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Assisted in creation of observational study on economic growth in developing countries}
+					\resitem{Compiled information on economic growth indicators using statistical software}
+					\resitem{Handled diagnostics and management of the study's primary dataset to assess quality and usability}
+				\end{itemize}
+				}
+
+	\end{itemize}  % End Experience list
+
+\end{document}
+
+ Given the time and date to display, the calendar program would display a simple calendar on the command line which took into account leap years}
+		\item[Normal Distribution] {\footnotesize This program simulated the classic wheel of fortune blinko game where several thousand chip were statistially recorded and displayed as they dropped into a board filled with pegs}
+		\item[RSA Encryption] {\footnotesize Developed an application which utilized the RSA encryption method to encrypt and decrypt messages}
+	\end{description}
+
+\end{document}
+
+
+
