@@ -9,11 +9,11 @@ CoverLetter.pdf
 CoverLetter.synctex.gz
 CoverLetter.tex
 resume_alternate.log
-resume_alternate.pdf
+#resume_alternate.pdf
 resume_alternate.synctex.gz
 resume_moderncv.log
 resume_moderncv.synctex.gz
-resume_moderncv.pdf
+#resume_moderncv.pdf
 resume
 latexdocs.Rproj
 sentiment.py.rtfd
