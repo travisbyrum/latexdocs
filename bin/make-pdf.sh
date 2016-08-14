@@ -2,7 +2,6 @@
 
 PROJECTDIR='../templates'
 CURRENTDIR=$(pwd)
-# check that the file exists
 
 for template in $(ls $PROJECTDIR)
 do
@@ -29,6 +28,8 @@ do
 	rm *.toc
 	rm *.lof
 	rm *.out
+
+	# move to pdf directory
 	mv *pdf ../../pdf/.
 
 done
