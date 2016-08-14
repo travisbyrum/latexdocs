@@ -27,6 +27,7 @@
 \addtolength{\textwidth}{0.5in}
 \addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{0.75in}
+
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
@@ -45,10 +46,12 @@
 \begin{document}
 
 \newcommand{\mywebheader}{
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\Huge Travis T. Byrum}  & (704) 930-8478\\
-	8520 Foxbridge Drive & \href{mailto:travis.tbyrum@gmail.com}{travis.tbyrum@gmail.com} \\
-	Matthews, NC 28104 & \href{https://github.com/travisbyrum}{github.com/travisbyrum}\\
+\begin{tabular*}
+	{7in}
+	{l@{\extracolsep{\fill}}r}
+		\textbf{\Huge Travis T. Byrum}  & (704) 930-8478\\
+		8520 Foxbridge Drive & \href{mailto:travis.tbyrum@gmail.com}{travis.tbyrum@gmail.com} \\
+		Matthews, NC 28104 & \href{https://github.com/travisbyrum}{github.com/travisbyrum}\\
 \end{tabular*}
 \\
 \vspace{0.1in}}
@@ -56,28 +59,29 @@
 \mywebheader
 \resheading{Education}
 \\
-%	\begin{itemize}
-%		\item[]
-			\ressubheading{Duke University}{Durham, NC}{B.S. Statistics and B.A. Political Science}{2013}
-				{ \footnotesize
-				\begin{itemize}
-					\resitem{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics}
-					\resitem{Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}} 
-					\resitem{Dean's List Fall 2011, Fall 2012, and Fall 2013} 
-				\end{itemize}
-%				}
-%	\end{itemize} % End Education list
+\ressubheading
+  {Duke University}
+  {Durham, NC}
+  {B.S. Statistics and B.A. Political Science}
+  {2013}
+  {
+	  \footnotesize
+		  \begin{itemize}
+			  \resitem{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, Data Analysis/Statistical Inference, 
+			  Regression Analysis, Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics}
+			  \resitem{Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}} 
+			  \resitem{Dean's List Fall 2011, Fall 2012, and Fall 2013} 
+		  \end{itemize}
 
-
-\resheading{Technical Skills}
+\resheading
+  {Technical Skills}
 	\begin{description}
-		\item[Languages:] { \footnotesize R, Python, SQL, \LaTeX
-		}
-		\item[Tools:] { \footnotesize IPython, matplotlib, numpy, scikit-learn, git, Github, BeautifulSoup, PostgreSQL, Sweave, Shiny, ggplot2, MapReduce, AWS, Markdown, Microsoft Office
-		}
-		\item[Machine Learning and Statistics:] { \footnotesize Classification, Regression, Clustering, Ensembles, Dimensionality Reduction, Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods
-		}
-	\end{description} % End Skills list
+		\item[Languages:]{\footnotesize R, Python, MySQL, PostgreSQL, \LaTeX, Markdown}
+		\item[Tools:]{\footnotesize IPython, matplotlib, numpy, scikit-learn, BeautifulSoup, caret, Shiny, ggplot2, git, Github, Sweave, knitr,
+        Unix Utilities, AWS, Microsoft Office, Qualtrics}
+		\item[Statistics and Machine Learning:]{\footnotesize Classification, Regression, Mixed-Effects Models, Clustering, Ensembles,
+        Dimensionality Reduction, Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods, Data Visualization}
+	\end{description}
 
 \resheading{Experience}
 	\begin{itemize}
@@ -85,15 +89,15 @@
 			\ressubsubheading{Morning Consult Data Scientist}{October 2015 - Current}
 				{ \footnotesize
 				\begin{itemize}
-					\resitem{Work directly with company co-founders on all phases of polling projects including survey creation, monitoring, and data analysis}
-					\resitem{Helped to improve statistical standards for the company's polling methodology}
-					\resitem{Constructed and validated various models for primary and election forecasting}
-					\resitem{Developed R package to automate in-house survey creation, monitoring, and adjustment for the polling team}
-					\resitem{Developed R package to connect to Lucid Fulcrum via the Fulcrum API to allow polling and data team members to programmatically interact with Fulcrum's market research platform}
-
+					\resitem{Work directly with company co-founders on all phases of polling projects including survey creation,
+        monitoring, and data analysis (research has been cited by: \textit{The Washington Post, Vox, Bloomberg, New York Times, The Hill, ABC, Huffington 
+        Post, 538, Fortune Magazine, among others})}
+					\resitem{Helped to improve statistical standards and develop best practices for the company’s polling methodology}
+					\resitem{Constructed and validated state and congressional-level election forecasts based off national surveys using multilevel regression and post-stratification (MRP)}
+          \resitem{Developed R package to automate in-house modeling and data visualization}
 				\end{itemize}
 				}
-				\item 
+		\item 
 			\ressubsubheading{Milwaukee Bucks Analytics Intern}{October 2014 - June 2015}
 				{ \footnotesize
 				\begin{itemize}
@@ -113,7 +117,7 @@
 coders in creating data visualizations}
 				\end{itemize}
 				}
-					\item 
+		\item 
 			\ressubsubheading{Teaching Assistant, Duke Statistics Department}{August-December 2013}
 				{ \footnotesize
 				\begin{itemize}
@@ -122,7 +126,6 @@ coders in creating data visualizations}
 					\resitem{Assisted students during office hours}
 				\end{itemize}
 				}
-				
 	\end{itemize}  % End Experience list
 \end{document}
 

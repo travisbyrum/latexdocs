@@ -1,0 +1,111 @@
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper'*****, 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                             % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple'
+
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+\name{Travis T.} {Byrum}
+\address{8520 Foxbridge Drive}{Matthews, NC 28104} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(704)~930~8478}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{travis.tbyrum@gmail.com}                    % optional, remove / comment the line if not wanted
+\social[github]{travisbyrum}                       % optional, remove / comment the line if not wanted \href{https://github.com/travisbyrum}{github.com/travisbyrum}
+
+\begin{document}
+\makecvtitle\vspace{-6ex}                          % -8ex allows an 11pt font size 
+
+\section{Education} 
+\cventry
+	{2013}
+	{B.S. Statistics and B.A. Political Science}
+	{Duke University}
+	{Durham, NC}
+	{}
+	{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics, 
+	Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory,
+	Statistical Consulting, Survey Statistics
+	\\Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}
+	\\Dean's List Fall 2011, Fall 2012, and Fall 2013} 
+
+\section{Technical Skills}
+\cvitem
+  {Languages:}
+  {R, Python, MySQL, PostgreSQL, \LaTeX, Markdown}
+\cvitem
+  {Tools:}
+  {IPython, matplotlib, numpy, scikit-learn, BeautifulSoup, caret, Shiny, ggplot2, git, Github, Sweave, knitr, Unix Utilities, AWS,
+  Microsoft Office, Qualtrics}
+\cvitem
+  {Statistics and Machine Learning:}{Classification, Regression, Mixed-Effects Models, Clustering, Ensembles, Dimensionality Reduction,
+  Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods, Data Visualization}
+
+\section{Experience}
+\cventry
+  {October 2015 - Current}
+  {Morning Consult Data Scientist}
+  {}
+  {Washington, DC}
+  {}
+  {
+    \begin{itemize}
+      \item{Work directly with company co-founders on all phases of polling projects including survey creation, monitoring, and data analysis
+      (research has been cited by: \textit{The Washington Post, Vox, Bloomberg, New York Times, The Hill, ABC, Huffington Post, 538,
+      Fortune Magazine, among others)}}
+      \item{Helped to improve statistical standards and develop best practices for the company’s polling methodology}
+      \item{Constructed and validated state and congressional-level election forecasts based off national surveys using multilevel regression 
+      and post-stratification (MRP)}
+      \item{Developed R package to automate in-house modeling and data visualization}
+    \end{itemize}
+  }
+  
+\cventry
+  {October 2014 - June 2015}{Milwaukee Bucks Analytics Intern}
+  {}
+  {Milwaukee, WI}
+  {}
+  {
+    \begin{itemize}
+      \item{Used the web application framework Shiny in the R programming environment to create a portal for distributing important 
+      information to coaches and front office employees}
+      \item{Constructed statistical models for tasks such as forecasting career outcomes for drafted players and predicting the 
+      efficiency of lineup combinations}
+      \item{Designed a framework for performance metrics to aid in player evaluation using several statistical methods}
+      \item{Worked directly under the Bucks' Director of Analytics along with front office employees and coaches to assist in evaluating 
+      the team's on-court performance}
+    \end{itemize}
+  }
+
+\cventry
+  {June 2013-April 2014}
+  {North Carolina Common Sense Analyst}
+  {}
+  {Durham, NC}
+  {}
+  {
+    \begin{itemize}
+      \item{Synthesized North Carolina government finances for public viewing as part of a Duke student-led public policy initiative}
+      \item{Quantified information on state budgetary reports using the R programming environment and assisted the team's coders in creating 
+      data visualizations}
+    \end{itemize}
+  }
+    
+\cventry
+  {August-December 2013}
+  {Teaching Assistant, Duke Statistics Department}
+  {}
+  {Durham, NC}
+  {}
+  {
+    \begin{itemize}
+      \item{Helped conduct the \emph{Probability/Statistics in Engineering} course at Duke University}
+      \item{Instructed one of the course's associated lab sections} 
+      \item{Assisted students during office hours}
+    \end{itemize}
+  }
+
+\clearpage
+\end{document}

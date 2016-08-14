@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-darknight}
+
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{000000}
+\definecolor{lighttext}{HTML}{000000}
+
+%%% Override a separator for social informations in header(default: ' | ')
+% \headersocialsep[\quad\textbar\quad]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{hologo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{}{Travis T. Byrum}
+% \address{}
+\mobile{(704) 930-8478} 
+%%% Social
+\email{travis.tbyrum@gmail.com}
+\github{travisbyrum}
+%%% Optionals
+\position{Data Scientist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Travis T. Byrum~~~·~~~Résumé}
+  {\thepage}
+
+\begin{document}
+
+%%% Make a header for CV with personal data
+\makecvheader
+
+\cvsection{Education}
+\begin{cventries}
+  \vspace{.5 mm}
+  \cventry
+    {B.S. Statistics and B.A. Political Science}
+    {Duke University}
+    {Durham, NC}
+    {2009 - 2013}
+    {
+      \begin{cvitems}
+        \item{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability,
+        Mathematical Statistics, Data Analysis/Statistical Inference, Regression Analysis, 
+        Bayesian/Modern Statistics, Decision Theory, Statistical Consulting, Survey Statistics}
+        \item{Senior Thesis: Wavelet-Based Functional Modeling of Accelerometer Data 
+        in Fitness Intervention Study}
+        \item{Dean’s List Fall 2011, Fall 2012, and Fall 2013}
+      \end{cvitems}
+    }
+\end{cventries}
+
+% Technical Skills section
+\cvsection{Technical Skills}
+\begin{cventries}
+  \cventry
+    {}
+    {}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item{\textbf{Languages:} R, Python, MySQL, PostgreSQL, \hologo{LaTeX}, Markdown}
+        \item{\textbf{Tools:} IPython, matplotlib, numpy, scikit-learn, BeautifulSoup, caret, Shiny, ggplot2, git, Github, Sweave, knitr,
+        Unix Utilities, AWS, Microsoft Office, Qualtrics}
+        \item{\textbf{Statistics and Machine Learning:} Classification, Regression, Mixed-Effects Models, Clustering, Ensembles,
+        Dimensionality Reduction, Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods, Data Visualization}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Morning Consult}
+    {Data Scientist}
+    {Washington, D.C.}
+    {October 2015 - Present}
+    {
+      \begin{cvitems}
+        \item{Work directly with company co-founders on all phases of polling projects including survey creation,
+        monitoring, and data analysis (\textit{research has been cited by: \textbf{The Washington Post, Vox, Bloomberg, New York Times, The Hill, ABC, Huffington Post, 538, Fortune Magazine, among others})}}
+        \item{Helped to improve statistical standards and develop best practices for the company’s polling methodology}
+        \item{Constructed and validated state and congressional-level election forecasts based off national surveys using multilevel regression and post-stratification (MRP)}
+        \item{Developed R package to automate in-house modeling and data visualization}
+      \end{cvitems}
+    }
+  \cventry
+    {Milwaukee Bucks}
+    {Analytics Intern}
+    {Milwaukee, WI.}
+    {October 2014 - June 2015}
+    {
+      \begin{cvitems}
+        \item{Used the web application framework Shiny in the R programming environment to create a portal for distributing important information to coaches and front office employees}
+        \item{Constructed statistical models for tasks such as forecasting career outcomes for drafted players
+and predicting the efficiency of lineup combinations}
+         \item{Designed a framework for performance metrics to aid in player evaluation using several statistical
+methods}
+        \item{Worked directly under the Bucks’ Director of Analytics along with front office employees and
+coaches to assist in evaluating the team’s on-court performance}
+      \end{cvitems}
+    }
+  \cventry
+    {Analyst}
+    {North Carolina Common Sense}
+    {Durham, NC.}
+    {June 2013 - April 2014}
+    {
+      \begin{cvitems}
+        \item{Synthesized North Carolina government finances for public viewing as part of a Duke student-led
+public policy initiative}
+        \item{Quantified information on state budgetary reports using the R programming environment and
+assisted the team’s coders in creating data visualizations}
+      \end{cvitems} 
+    }
+    
+  \cventry
+    {Teaching Assistant}
+    {Duke Statistics Department}
+    {Durham, NC.}
+    {August 2013 - December 2013}
+    {
+      \begin{cvitems}
+        \item{Helped conduct the Probability/Statistics in Engineering course at Duke University}
+        \item{Instructed one of the course’s associated lab sections}
+        \item{Assisted students during office hours}
+      \end{cvitems} 
+    }
+
+\end{cventries}
+\end{document}
