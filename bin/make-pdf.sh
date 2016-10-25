@@ -1,38 +1,14 @@
 #! /bin/bash
 
-PROJECTDIR='../templates'
+TEXFILE=$1
 CURRENTDIR=$(pwd)
 
-for template in $(ls $PROJECTDIR)
-do
-	echo -e "Processing $template ... \n\n"
+if [ "TEXFILE" == *.tex ]; then
+    echo "tex file not found!"
+    exit 1
+fi
 
-	cd ~/latexdocs/templates/$template
+DIR_NAME=$(dirname $TEXFILE)
+cd "$DIR_NAME"
 
-	echo -e "Available files: $(pwd) \n\n"
-
-	TEXFILE=$(ls *.tex)
-	BASEFILE=${TEXFILE%.*}
-
-	echo -e "texfile: $TEXFILE"
-	echo -e "basefile: $BASEFILE"
-
-	xelatex -interaction=nonstopmode $TEXFILE
-	xelatex -interaction=nonstopmode $TEXFILE
-
-	# these lines can be appended to delete other files, such as *.out
-	rm *.aux
-	rm *.log
-	rm *.ps
-	rm *.dvi
-	rm *.toc
-	rm *.lof
-	rm *.out
-
-	# move to pdf directory
-	mv *pdf ../../pdf/.
-
-done
-
-cd $CURRENTDIR
-
+xelatex -interaction=nonstopmode "$TEXFILE" -output-directory="$CURRENTDIR"
