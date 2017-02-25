@@ -3,7 +3,7 @@ BIN_DIR := $(ROOT_DIR)/bin
 PDF_DIR := $(ROOT_DIR)/pdf
 TEMPLATE_DIR := $(ROOT_DIR)/templates
 
-all: $(PDF_DIR)/resume-alternate.pdf $(PDF_DIR)/resume-modern.pdf $(PDF_DIR)/resume.pdf
+all: $(PDF_DIR)/resume-alternate.pdf $(PDF_DIR)/resume-modern.pdf $(PDF_DIR)/resume.pdf clean
 
 $(PDF_DIR)/resume-alternate.pdf: $(TEMPLATE_DIR)/alternate-cv/resume-alternate.tex 
 	@echo "*** Making alternate resume"
