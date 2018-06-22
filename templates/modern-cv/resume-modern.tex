@@ -1,6 +1,6 @@
 %% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper'*****, 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper'*****, 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -10,7 +10,7 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 
 \name{Travis T.} {Byrum}
-\address{8520 Foxbridge Drive}{Matthews, NC 28104} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{1833 New Hampshire Ave NW}{Washington, DC 20009} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(704)~930~8478}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{travis.tbyrum@gmail.com}                    % optional, remove / comment the line if not wanted
 \social[github]{travisbyrum}                       % optional, remove / comment the line if not wanted \href{https://github.com/travisbyrum}{github.com/travisbyrum}
@@ -25,40 +25,51 @@
 	{Duke University}
 	{Durham, NC}
 	{}
-	{Coursework Includes: Multivariable Calculus, Linear Algebra, Probability, Mathematical Statistics,
-	Data Analysis/Statistical Inference, Regression Analysis, Bayesian/Modern Statistics, Decision Theory,
-	Statistical Consulting, Survey Statistics
-	\\Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}
+	{Senior Thesis: \textit{Wavelet-Based Functional Modeling of Accelerometer Data in Fitness Intervention Study}
 	\\Dean's List Fall 2011, Fall 2012, and Fall 2013}
 
 \section{Technical Skills}
 \cvitem
   {Languages:}
-  {R, Python, SQL, \LaTeX, Markdown, JavaScript, CSS, HTML, Java}
+  {Python, JavaScript, TypeScript, Go, R, Java, \LaTeX}
 \cvitem
-  {Tools:}
-  {IPython, scikit-learn, Flask, BeautifulSoup, D3.js, caret, Shiny, ggplot2, git, Sweave, knitr, Unix Utilities, AWS, MySQL, PostgreSQL}
+  {Technologies:}
+  {Flask, Django, React.js, Docker, MySQL, PostgreSQL, Elasticsearch, TensorFlow, MapReduce, Linux, aws, Nginx, git, Jira}
 \cvitem
-  {Statistics and Machine Learning:}{Classification, Regression, Mixed-Effects Models, Clustering, Ensembles, Dimensionality Reduction,
-  Hypothesis Testing, Decision Analysis, Bayesian Statistics, Nonparametric Methods, Data Visualization}
+  {Statistics and Machine Learning:}
+  {Machine Learning, NLP, Clustering, Ensembles, Dimensionality Reduction, Mixed-Effects Models, Decision Analysis, Bayesian Statistics, Nonparametric Methods, Data Visualization}
 
 \section{Experience}
-\cventry
-  {October 2015 - Current}
+\cventry[1.5em]
+  {September 2017 - Current}
+  {Booz Allen Hamilton Software Developer}
+  {}
+  {Washington, DC}
+  {}
+  {
+    \begin{itemize}
+		\item{Designed backend search service for Grants.gov using Flask and Elasticsearch}
+ 		\item{Constructed containerized data pipeline Grants.gov etl using Airflow}
+		\item{Created chatbot for award winning internal investment including both frontend design in React.js and backend architecture}
+    \end{itemize}
+  }
+
+\cventry[1.5em]
+  {October 2015 - September 2017}
   {Morning Consult Data Scientist}
   {}
   {Washington, DC}
   {}
   {
     \begin{itemize}
-		\item{Work directly with company co-founders on all phases of polling projects including survey creation, monitoring, and data analysis (\textit{Research has been cited by: \textbf{The Washington Post, New York Times, 538, Fortune Magazine, The Hill, ABC, Huffington Post, Vox, Bloomberg, among others}})}
- 		\item{Write and maintain software packages for in-house modeling and data visualizations using Python and R}
-		\item{Developed data infrastructure and API integrations for automatic reporting}
+		\item{Worked directly with company co-founders on all phases of polling projects including survey creation, monitoring, and data analysis (\textit{Research has been cited by: \textbf{The Washington Post, New York Times, 538, Fortune Magazine, The Hill, ABC, Huffington Post, Vox, Bloomberg, among others}})}
+ 		\item{Wrote and maintained software packages for in-house modeling and data visualizations using Python and R}
+		\item{Developed data infrastructure and API integrations for automatic reporting using D3.js and Flask}
 		\item{Constructed and validated state and congressional-level election forecasts based on national surveys using multilevel regression and post-stratification (MRP)}
     \end{itemize}
   }
 
-\cventry
+\cventry[1.5em]
   {October 2014 - June 2015}{Milwaukee Bucks Analytics Intern}
   {}
   {Milwaukee, WI}
@@ -71,35 +82,6 @@
       \item{Designed a framework for performance metrics to aid in player evaluation using several statistical methods}
       \item{Worked directly under the Bucks' Director of Analytics along with front office employees and coaches to assist in evaluating 
       the team's on-court performance}
-    \end{itemize}
-  }
-
-\cventry
-  {June 2013-April 2014}
-  {North Carolina Common Sense Analyst}
-  {}
-  {Durham, NC}
-  {}
-  {
-    \begin{itemize}
-      \item{Synthesized North Carolina government finances for public viewing as part of a Duke student-led public policy initiative}
-      \item{Conducted statistical and policy analysis on state budgetary operations}
-      \item{Quantified information on state budgetary reports using the R programming environment and assisted the team's coders in creating 
-      data visualizations}
-    \end{itemize}
-  }
-    
-\cventry
-  {August-December 2013}
-  {Teaching Assistant, Duke Statistics Department}
-  {}
-  {Durham, NC}
-  {}
-  {
-    \begin{itemize}
-      \item{Helped conduct the \emph{Probability/Statistics in Engineering} course at Duke University}
-      \item{Instructed one of the course's associated lab sections} 
-      \item{Assisted students during office hours}
     \end{itemize}
   }
 
